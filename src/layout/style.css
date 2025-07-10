@@ -1,0 +1,14 @@
+
+.navActive.active{
+    color: blue;
+    font-weight: bold;
+}
+.navActive:hover{
+    color: blue;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+.navActive:hover::before{
+    width: 100%;
+    color: blue;
+}

@@ -1,11 +1,9 @@
-import React from 'react'
-
+import React from "react";
+import MainLayout from "./pages/index"
 const App = () => {
-  return (
-    <div>
-appppp      
-    </div>
-  )
-}
+  return <div>
+    <MainLayout/>
+  </div>
+};
 
-export default React.memo(App)
+export default React.memo(App);
