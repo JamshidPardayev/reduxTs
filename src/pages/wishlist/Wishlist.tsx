@@ -1,11 +1,17 @@
-import React from 'react'
+import React from "react";
+import WishlistPosts from "../wishlistPosts/WishlistPosts";
+import WishlistComments from "../wishlistComments/WishlistComments";
+import WishlistAlbums from "../wishlistAlbums/WishlistAlbums";
 
 const Wishlist = () => {
+  
   return (
     <div>
-      Wishlist
+      <WishlistPosts />
+      <WishlistComments />
+      <WishlistAlbums />
     </div>
-  )
-}
+  );
+};
 
-export default React.memo(Wishlist)
+export default React.memo(Wishlist);

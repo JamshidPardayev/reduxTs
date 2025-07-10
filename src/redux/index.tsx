@@ -1,8 +1,13 @@
 import { configureStore } from "@reduxjs/toolkit";
-// import wishlist from "./features/"
+import posts from "./features/postSlice";
+import comments from "./features/commentSlice";
+import albums from "./features/albumSlice";
 export const store = configureStore({
   reducer: {
-// wishlist
+    posts,
+    comments,
+    albums,
+
   },
 });
 
