@@ -1,7 +1,7 @@
 // useTodos.ts
-import { useQuery } from "react-query";
 import type { ITodos } from "../types";
 import { api } from "../api";
+import { useQuery } from "@tanstack/react-query";
 
 export const useTodos = () => {
   return useQuery<ITodos[]>({

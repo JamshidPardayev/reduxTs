@@ -18,9 +18,13 @@ const WishlistTodos = () => {
 
   return (
     <div className="container">
-      <h2 className="text-[30px] text-center font-semibold mb-5 mt-2">Like Todos</h2>
+      <h2 className="text-[30px] text-center font-semibold mb-5 mt-2">
+        Like Todos
+      </h2>
       {wishlist.length === 0 ? (
-        <p className="text-2xl text-center text-gray-700">No liked todos yet!</p>
+        <p className="text-2xl text-center text-gray-700">
+          No liked todos yet!
+        </p>
       ) : (
         <ul className="space-y-2">
           {wishlist.map((todo) => (
@@ -43,4 +47,4 @@ const WishlistTodos = () => {
   );
 };
 
-export default WishlistTodos;
+export default React.memo(WishlistTodos);
