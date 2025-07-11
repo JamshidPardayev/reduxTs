@@ -23,11 +23,10 @@ const Users = () => {
     const updated = toggleUserWishlist(user);
     setWishlist(updated);
   };
-
   if (isLoading) {
     return (
       <>
-        {Array.from({ length: data?.length ?? 6 }).map((_, i) => (
+        {Array.from({ length: 6 }).map((_, i) => (
           <UserSkeleton key={i} />
         ))}
       </>
