@@ -15,3 +15,17 @@ export interface IAlbums {
   id: number;
   title: string;
 }
+
+export interface ITodos {
+  id: number;
+  title: string;
+  completed: boolean;
+}
+
+export interface IUsers {
+  id: number;
+  name: string;
+  username: string;
+  email: string;
+  phone: string;
+}

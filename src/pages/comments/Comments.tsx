@@ -60,7 +60,7 @@ const Comments = () => {
                 onClick={() => dispatch(toggleComment(comment))}
                 className="w-[200px] h-[40px] bg-red-500 duration-300 hover:bg-red-700 text-white rounded cursor-pointer font-medium"
               >
-                {isLiked ? "Dislike" : "Like"}
+                {isLiked ? "Dislike" : <p className="bg-green-600 h-full w-full content-center rounded">Like</p>}
               </button>
             </div>
           );

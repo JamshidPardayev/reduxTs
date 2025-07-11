@@ -1,13 +1,12 @@
-import React from "react";
+import React, { lazy } from "react";
 import { useRoutes } from "react-router-dom";
-import Layout from "../pages/layout/Layout";
-import Posts from "./posts/Posts";
-import Comments from "./comments/Comments";
-import Albums from "./albums/Albums";
-import Photos from "./photos/Photos";
-import Todos from "./todos/Todos";
-import Users from "./users/Users";
-import Wishlist from "./wishlist/Wishlist";
+const Layout = lazy(() => import("./layout/Layout"));
+const Posts = lazy(() => import("./posts/Posts"));
+const Comments = lazy(() => import("./comments/Comments"));
+const Albums = lazy(() => import("./albums/Albums"));
+const Todos = lazy(() => import("./todos/Todos"));
+const Users = lazy(() => import("./users/Users"));
+const Wishlist = lazy(() => import("./wishlist/Wishlist"));
 
 const MainLayout = () => {
   const routes = useRoutes([
@@ -26,10 +25,6 @@ const MainLayout = () => {
         {
           path: "albums",
           element: <Albums />,
-        },
-        {
-          path: "photos",
-          element: <Photos />,
         },
         {
           path: "todos",

@@ -61,7 +61,13 @@ const Posts = () => {
                 onClick={() => dispatch(togglePost(post))}
                 className="w-[200px] h-[40px] bg-red-500 hover:bg-red-700 text-white rounded cursor-pointer font-medium duration-300"
               >
-                {isLiked ? "Dislike" : "Like"}
+                {isLiked ? (
+                  "Dislike"
+                ) : (
+                  <p className="bg-green-600 h-full w-full rounded content-center">
+                    Like
+                  </p>
+                )}
               </button>
             </div>
           );

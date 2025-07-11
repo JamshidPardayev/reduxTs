@@ -57,7 +57,7 @@ const Albums = () => {
                 onClick={() => dispatch(toggleAlbum(album))}
                 className="w-[180px] mt-3 h-[30px] bg-red-500 hover:bg-red-700 text-white rounded cursor-pointer font-medium duration-300"
               >
-                {isLiked ? "Dislike" : "Like"}
+                {isLiked ? "Dislike" : <p className="bg-green-600 content-center rounded w-full h-full">Like</p> }
               </button>
             </div>
           );

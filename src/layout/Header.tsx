@@ -34,14 +34,6 @@ const Header = () => {
         <li>
           <NavLink
             className={"navActive font-medium duration-300"}
-            to={"/photos"}
-          >
-            Photos
-          </NavLink>
-        </li>
-        <li>
-          <NavLink
-            className={"navActive font-medium duration-300"}
             to={"/todos"}
           >
             Todos

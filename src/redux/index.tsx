@@ -7,7 +7,6 @@ export const store = configureStore({
     posts,
     comments,
     albums,
-
   },
 });
 
