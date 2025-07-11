@@ -16,7 +16,7 @@ const WishlistUsers = () => {
   };
 
   return (
-    <div className="p-4">
+    <div className="container">
       <h2 className="text-[30px] font-semibold text-center mb-3">Like Users</h2>
       {wishlist.length === 0 ? (
         <p className="text-center text-2xl text-gray-700">No Liked Users Yet!</p>
