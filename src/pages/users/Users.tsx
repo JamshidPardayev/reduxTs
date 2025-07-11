@@ -27,8 +27,8 @@ const Users = () => {
   if (isLoading) {
     return (
       <>
-        {Array.from({ length: data?.length ?? 6 }).map((_, inx) => (
-          <UserSkeleton key={inx} />
+        {Array.from({ length: data?.length ?? 6 }).map((_, i) => (
+          <UserSkeleton key={i} />
         ))}
       </>
     );
@@ -44,9 +44,7 @@ const Users = () => {
             className="flex flex-col gap-1 px-3 py-1 my-3 border border-gray-300 bg-gray-100 rounded shadow"
           >
             <div>
-              <h3 className="text-[20px] font-semibold">
-                {user?.name}
-              </h3>
+              <h3 className="text-[20px] font-semibold">{user?.name}</h3>
               <p>{user?.email}</p>
               <p>{user?.phone}</p>
             </div>

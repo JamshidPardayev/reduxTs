@@ -25,8 +25,8 @@ const Todos = () => {
   if (isLoading) {
     return (
       <>
-        {Array.from({ length: data?.length ?? 10 }).map((_, inx) => (
-          <TodoSkeleton key={inx} />
+        {Array.from({ length: data?.length ?? 6 }).map((_, i) => (
+          <TodoSkeleton key={i} />
         ))}
       </>
     );
